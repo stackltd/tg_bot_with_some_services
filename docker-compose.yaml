@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    depends_on: []
+#    restart: unless-stopped
+    env_file:
+      - .env
+    logging:
+      driver: "json-file"
+      options:
+        max-file: 10
+        max-size: "200k"
