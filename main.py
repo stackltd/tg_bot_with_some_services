@@ -94,8 +94,6 @@ def get_text_messages(message: telebot) -> None:
                                 'ку', 'хай', 'прив', 'прива', 'трям']:
         bot.send_message(message.from_user.id, 'И вам здравствуйте :) Пожалуйста, выберите команду из /menu, '
                                                'чтобы воспользоваться нашим сервисом')
-    elif  message.text in ("kkk", "ккк"):
-        bot.send_message(message.from_user.id, "Каничива, красивые коллеги)")
     elif message.text == 'стопбот258':
         bot.send_message(message.from_user.id, 'Бот остановлен')
         bot.stop_polling()
